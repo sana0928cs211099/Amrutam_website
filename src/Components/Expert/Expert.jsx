@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaStar, FaArrowRight, FaLeaf } from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 const experts = [
     {
@@ -205,9 +206,9 @@ function Expert() {
             </div>
 
             <div className="text-center flex justify-center mt-12 mb-14">
-                <button className="bg-green-100 border-2 border-green-600 flex text-green-600 lg:text-xl text-sm font-semibold gap-3 px-4 lg:py-4 py-2 rounded-full">
+                <Link to='/doc' className="bg-green-100 border-2 border-green-600 flex text-green-600 lg:text-xl text-sm font-semibold gap-3 px-4 lg:py-4 py-2 rounded-full">
                     Find more experts <span><FaArrowRight lg:size={20} className='mt-1' /></span>
-                </button>
+                </Link>
             </div>
 
         </div>
